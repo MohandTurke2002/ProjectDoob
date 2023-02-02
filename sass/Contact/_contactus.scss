@@ -1,0 +1,60 @@
+@use "../Variabls/variabls" as *;
+
+.contactus {
+  margin-top: 200px;
+  position: relative;
+  .title {
+    color: $alt-color;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+  h2 {
+    color: $main-color;
+    font-size: 45px;
+    margin-bottom: 30px;
+  }
+  .row {
+    row-gap: 25px !important;
+    margin: 35px 0 !important;
+  }
+  input:not(.main) {
+    width: 100%;
+    border: none;
+    padding: 15px 20px;
+    background-color: #F4FAFE;
+    height: 100%;
+    color: $main-color;
+    font-weight: 600;
+    outline: none;
+    &::placeholder {
+    color: $main-color;
+    }
+  }
+  textarea {
+    height: 150px;
+    width: 100%;
+    border: none;
+    padding: 15px 20px;
+    background-color: #F4FAFE;
+    color: $main-color;
+    font-weight: 600;
+    outline: none;
+    text-align: start;
+  }
+  .main {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 991px) {
+  .contactus {
+    .title {
+      text-align: center;
+    }
+    h2 {
+      text-align: center;
+    }
+  }
+}

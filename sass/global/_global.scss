@@ -1,0 +1,27 @@
+@use "../Variabls/variabls" as *;
+
+body {
+  padding: 20px 0 0 0;
+  scroll-behavior: smooth !important;
+}
+
+.container {
+  height: 100%;
+}
+
+.main {
+  border: 2px solid $alt-color !important;
+  padding: 15px 35px !important;
+  border-radius: 30px !important;
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  background-color: $alt-color !important;
+  color: white !important;
+  margin-right: 25px !important;
+  transition: .3s linear !important;
+  &:hover {
+    background-color: white !important;
+    color: $alt-color !important;
+    border: 2px solid $alt-color !important;
+  }
+}

@@ -1,0 +1,53 @@
+@use "../Variabls/variabls" as *;
+
+.footer {
+  background-color: $main-color;
+  margin-top: 140px;
+  padding: 70px 0 0 0;
+  min-height: 400px;
+  text-align: center;
+  p {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    margin: 0;
+  }
+  h1 {
+    color: $alt-color;
+    font-size: 50px;
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+    margin: 25px 0 40px;
+    a {
+      color: white;
+      font-weight: 500;
+      font-size: 18px;
+      text-decoration: none;
+      &:hover {
+        color: $alt-color;
+      }
+      i {
+        font-size: 40px;
+      }
+    }
+  }
+  .icons {
+    column-gap: 70px;
+  }
+}
+
+@media (max-width: 550px) {
+  .footer {
+    padding-bottom: 20px;
+  }
+  ul {
+    flex-direction: column;
+  }
+  .icons {
+    margin-bottom: 0px !important;
+    row-gap: 20px;
+  }
+}
